@@ -1,0 +1,317 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        main {
+            width: 800px;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            margin: 5px auto;
+            color: white;
+            font-family: 'Roboto', sans-serif;
+            font-size: 12px;
+        }
+        header {
+            height: 250px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: #0e3441;
+            background: linear-gradient(135deg, rgba(14,52,65,1) 24%, rgba(28,30,42,1) 55%, rgba(4,4,4,1) 100%);
+        }
+        .content__container {
+            display: flex;
+            height: 100vh;
+            background: rgb(4,4,4);
+            background: linear-gradient(130deg, rgba(4,4,4,1) 45%, rgba(14,52,65,1) 94%);
+        }
+        .left__section {
+            margin-top: 25px;
+            width: 70%;
+            height: 60%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .left__section .info__container {
+            display: flex;
+            gap: .5rem;
+            align-items: center;
+            padding: 5px;
+            margin-top: 1rem;
+        }
+        .left__section .experience__helper {
+            width: 100%;
+            height: 40px;
+            display: flex;
+            margin-bottom: 2px;
+            justify-content: flex-start;
+            align-items: center;
+            margin-left: 50px;
+        }
+        .left__section .experience__helper h3 {
+            text-decoration: underline  #29E8A3 ;
+            text-decoration-thickness: 4px;
+        }
+        .title__container {
+            margin-bottom: 4px;
+        }
+        .title__container .doble__title--container {
+            display: flex;
+            gap: .5rem;
+        }
+        .title__container .span__container {
+            display: flex;
+            font-size: small;
+            font-weight: 200;
+        }
+        .title__container h3:last-child {
+            font-weight: 400;
+
+        }
+        .right__section {
+            width: 30%;
+            margin-top: 25px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 1rem;
+        }
+
+        .mini__card, .mini__card--tec {
+            width: 200px;
+            height: auto;
+            border-radius: 1rem;
+            background-color: #171717;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 4px;
+            color: white;
+
+        }
+        .mini__card--tec {
+            display: flex;
+            font-size: 12px;
+        }
+        .stacks__container {
+            width: 100%;
+            display: flex;
+        }
+        .frontend__stack {
+            width: 50%;
+            text-align: center;
+        }
+        .frontend__stack ul {
+            list-style: none;
+        }
+        .backend__stack {
+            width: 50%;
+            text-align: center;
+        }
+        .backend__stack ul {
+            list-style: none;
+        }
+        .mini__card h4 {
+            margin-top: 1rem;
+        }
+        .mini__card ul {
+            list-style: none;
+            width: 70%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .mini__card li {
+            padding: 4px;
+            padding-bottom: 12px;
+            font-size: 12px;
+        }
+
+        .info__card {
+            height: 300px;
+            width: 90%;
+            border: 1px solid #171717;
+        }
+
+        .info__card .circle {
+            width: 30px;
+            height: 30px;
+            border-radius: 5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid white;
+        }
+        .info__card .circle img {
+            width: 100%;
+            border-radius: 5rem;
+        }
+        .info__card .job__description {
+            margin: 2px 6px 0 40px;
+        }
+        .info__card .job__description li {
+            padding-bottom: .5rem;
+            list-style: none;
+        }
+        .text__container {
+            width: 500px;
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+            margin-bottom: 1rem;
+        }
+        .text__container p {
+            font-size: 12px;
+            font-weight: 400;
+            text-align: left;
+        }
+        .list__container {
+            display: flex;
+            justify-content: space-around;
+            gap:4rem;
+            list-style: none;
+            font-size: 12px;
+            width: 500px;
+            justify-content: center;
+
+        }
+        .list__container img {
+            width: 12px;
+            color: white;
+            background-color: white;
+        }
+        .list__container a {
+            color: #29E8A3;
+            font-weight: 500;
+            text-decoration: none;
+        }
+        .tec__titles--container {
+            display: flex;
+            width: 100%;
+            justify-content: space-around;
+        }
+    </style>
+</head>
+<body>
+<main>
+    <section class="content__container">
+        <section class="left__section">
+            <div class="experience__helper"><h3>Historia Académica</h3></div>
+            <article class="info__card">
+                <div class="info__container">
+                    <div class="circle">
+                        <img src="https://static.platzi.com/media/avatars/Platzi-f730e65b-e92b-44d3-81c0-5c59c4dc4658.png" alt="">
+                    </div>
+                    <section class="title__container">
+                        <div class="doble__title--container">
+                            <h3>Platzi Master</h3>
+                            <p> - </p>
+                            <h3>Platzi</h3>
+                        </div>
+                        <div class="span__container">
+                            <p>Marzo 2022/</p>
+                            <p> Presente</p>
+                        </div>
+                    </section>
+                </div>
+                <div class="job__description">
+                    <ul>
+                        <li>Formación de desarrollo fullstack, donde aprendí conceptos fundamentales de ingeniería de software</li>
+                    </ul>
+                </div>
+            </article>
+            <article class="info__card">
+                <div class="info__container">
+                    <div class="circle">
+                        <img src="https://d31uz8lwfmyn8g.cloudfront.net/Assets/favicon.png" alt="">
+                    </div>
+                    <section class="title__container">
+                        <div class="doble__title--container">
+                            <h3>Soy Henry</h3>
+                            <p> - </p>
+                            <h3>Henry</h3>
+                        </div>
+                        <div class="span__container">
+                            <p>Marzo 2021/</p>
+                            <p>Agosto 2021</p>
+                        </div>
+                    </section>
+                </div>
+                <div class="job__description">
+                    <ul>
+                        <li>Formación como programador con el stack PERN: Postgres, Express, React y Node.</li>
+                        <li>40 horas de trabajo práctico y 60 de trabajo teórico</li>
+                        <li>pool de 12 proyectos</li>
+                    </ul>
+                </div>
+            </article>
+            <article class="info__card">
+                <div class="info__container">
+                    <div class="circle">
+                        <img src="https://www.iena.org/wp-content/uploads/2017/10/Escudo_BUAP_Negativo_3-848x848.png" alt="">
+                    </div>
+                    <section class="title__container">
+                        <div class="doble__title--container">
+                            <h3>Licenciatura en Derecho</h3>
+                            <p> - </p>
+                            <h3>BUAP</h3>
+                        </div>
+                        <div class="span__container">
+                            <p>Junio 2015 - </p>
+                            <p> Diciembre 2019</p>
+                        </div>
+                    </section>
+                </div>
+                <div class="job__description">
+                    <ul>
+                        <li>Licenciatura en derecho.</li>
+                    </ul>
+                </div>
+            </article>
+        </section>
+        <section class="right__section">
+            <article class="mini__card">
+                <h4>Soft Skills</h4>
+                <ul>
+                    <li>Liderazgo</li>
+                    <li>Resiliencia</li>
+                    <li>Ownership</li>
+                    <li>Aprendizaje constante</li>
+                    <li>Comunicación empática</li>
+                </ul>
+            </article>
+            <article class="mini__card">
+                <h4>Hobbies</h4>
+                <ul>
+                    <li>Fútbol</li>
+                    <li>Gimnasio</li>
+                    <li>Ver películas</li>
+                    <li>Viajar</li>
+                </ul>
+            </article>
+            <article class="mini__card">
+                <h4>Frase Favorita</h4>
+                <ul>
+                    <li>"Si se cree y se trabaja, se puede."</li>
+                </ul>
+            </article>
+
+        </section>
+    </section>
+</main>
+
+</body>
+</html>
