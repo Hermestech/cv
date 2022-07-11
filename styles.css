@@ -1,0 +1,240 @@
+:root {
+    --text-anchor-color: #29E8A3
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+main {
+    /* width: 800px; */
+    width: 90vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin: 5px auto;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+}
+header {
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgb(14,52,65);
+    background: linear-gradient(135deg, rgba(14,52,65,1) 24%, rgba(28,30,42,1) 55%, rgba(4,4,4,1) 100%);
+}
+.content__container {
+    display: flex;
+    height: 100vh;
+    background: rgb(4,4,4);
+    background: linear-gradient(130deg, rgba(4,4,4,1) 24%, rgba(15,14,20,1) 55%);
+}
+.left__section {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.left__section .info__container {
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+    padding: 5px;
+    margin-top: 1rem;
+}
+.left__section .experience__helper {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    margin-bottom: 2px;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 50px;
+}
+.left__section .experience__helper h3 {
+    text-decoration: underline  var(--text-anchor-color) ;
+    text-decoration-thickness: 4px;
+}
+.title__container {
+    margin-bottom: 4px;
+}
+.title__container .doble__title--container {
+    display: flex;
+    gap: .5rem;
+}
+.title__container .span__container {
+    display: flex;
+    font-size: small;
+    font-weight: 200;
+}
+.title__container h3:last-child {
+    font-weight: 400;
+
+}
+.right__section {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.mini__card, .mini__card--tec {
+    width: 200px;
+    height: auto;
+    border-radius: 1rem;
+    background-color: #171717;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    color: white;
+
+}
+.mini__card--tec {
+    display: flex;
+    font-size: 12px;
+}
+.stacks__container {
+    width: 100%;
+    display: flex;
+}
+.frontend__stack {
+    width: 50%;
+    text-align: center;
+}
+.frontend__stack ul {
+    list-style: none;
+}
+.backend__stack {
+    width: 50%;
+    text-align: center;
+}
+.backend__stack ul {
+    list-style: none;
+}
+.mini__card h4 {
+    margin-top: 1rem;
+}
+.mini__card ul {
+    list-style: none;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.mini__card li {
+    padding: 4px;
+    padding-bottom: 12px;
+    font-size: 12px;
+}
+.mini__card a {
+    color: var(--text-anchor-color);
+}
+
+.info__card {
+    height: 300px;
+    width: 90%;
+    border: 1px solid #171717;
+}
+
+.info__card .circle {
+    width: 30px;
+    height: 30px;
+    border-radius: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+}
+.info__card .circle img {
+    width: 100%;
+    border-radius: 5rem;
+}
+.info__card .job__description {
+    margin: 2px 6px 0 40px;
+}
+.info__card .job__description li {
+    padding-bottom: .5rem;
+    list-style: none;
+}
+.text__container {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-bottom: 1rem;
+}
+.text__container p {
+    font-size: 12px;
+    font-weight: 400;
+    text-align: left;
+}
+.list__container {
+    display: flex;
+    justify-content: space-around;
+    gap:4rem;
+    list-style: none;
+    font-size: 12px;
+    width: 500px;
+    justify-content: center;
+
+}
+.list__container img {
+    width: 12px;
+    color: white;
+    background-color: white;
+}
+.list__container a {
+    color: var(--text-anchor-color);
+    font-weight: 500;
+    text-decoration: none;
+}
+.tec__titles--container {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+@media (max-width:400px) {
+    main {
+        width: 100%;
+        margin: auto;
+    }
+    .text__container {
+        width: 90%;
+    }
+    .list__container {
+        display: block;
+        width: auto;
+    }
+    .content__container{
+        flex-direction: column;
+    }
+    .left__section {
+        width: 100%;
+    }
+    .left__section .experience__helper {
+        justify-content: center;
+        margin-left: 0px;
+        height: 60px;
+    }
+    .right__section {
+        width: 100%;
+    }
+    .mini__card {
+        width: 100%;
+        border-radius: 0;
+        text-align: center;
+    }
+    .mini__card--tec {
+        width: 100%;
+        border-radius: 0;
+    }
+}
