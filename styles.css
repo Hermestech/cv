@@ -8,8 +8,7 @@
     padding: 0;
 }
 main {
-    /* width: 800px; */
-    width: 90vw;
+    width: 800px;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -200,6 +199,12 @@ header {
     display: flex;
     width: 100%;
     justify-content: space-around;
+}
+@media (max-width:800px) {
+    main {
+        width: 100vw;
+        height: auto;
+    }
 }
 
 @media (max-width:400px) {
